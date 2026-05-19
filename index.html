@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnockOut — Боксёрский клуб</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span class="header__logo-knock">KNOCK</span><span class="header__logo-out">OUT</span>
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#coaches">Тренеры</a></li>
+          <li class="nav__item"><a class="nav__link" href="#schedule">Расписание</a></li>
+          <li class="nav__item"><a class="nav__link" href="#prices">Цены</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="#contacts" class="btn btn--header">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== MOBILE MENU ====== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__list">
+      <li><a class="mobile-menu__link" href="#about">О нас</a></li>
+      <li><a class="mobile-menu__link" href="#coaches">Тренеры</a></li>
+      <li><a class="mobile-menu__link" href="#schedule">Расписание</a></li>
+      <li><a class="mobile-menu__link" href="#prices">Цены</a></li>
+      <li><a class="mobile-menu__link" href="#contacts">Контакты</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+      <div class="hero__bg-text">BOXING</div>
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__badge">Боксёрский клуб · с 2015 года</div>
+          <h1 class="hero__title">
+            СТАНЬ<br>
+            <span class="hero__title-accent">ЧЕМ<span class="hero__title-outline">ПИО</span>НОМ</span>
+          </h1>
+          <p class="hero__subtitle">
+            Профессиональный бокс для начинающих и опытных спортсменов.<br>
+            Тренировки 7 дней в неделю под руководством мастеров спорта.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacts" class="btn btn--primary">Первая тренировка бесплатно</a>
+            <a href="#about" class="btn btn--ghost">Узнать больше</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-num">500+</span>
+              <span class="hero__stat-label">учеников</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">8</span>
+              <span class="hero__stat-label">тренеров</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">120+</span>
+              <span class="hero__stat-label">наград</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__ring">
+            <div class="hero__ring-inner">
+              <div class="hero__gloves">🥊</div>
+            </div>
+          </div>
+          <div class="hero__circle hero__circle--1"></div>
+          <div class="hero__circle hero__circle--2"></div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__label">О клубе</div>
+        <h2 class="about__title">Почему выбирают <span class="text-accent">KnockOut</span></h2>
+        <div class="about__grid">
+          <div class="about__card">
+            <div class="about__card-icon">🏆</div>
+            <h3 class="about__card-title">Опытные тренеры</h3>
+            <p class="about__card-text">Наши тренеры — мастера спорта и чемпионы России с многолетним опытом подготовки спортсменов всех уровней.</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">💪</div>
+            <h3 class="about__card-title">Современный зал</h3>
+            <p class="about__card-text">Зал площадью 400 м² оснащён профессиональным рингом, грушами, скоростными мешками и тренажёрным залом.</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">🎯</div>
+            <h3 class="about__card-title">Для всех уровней</h3>
+            <p class="about__card-text">Группы для детей от 6 лет, взрослых новичков, любителей и профессиональных спортсменов.</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">📅</div>
+            <h3 class="about__card-title">Гибкое расписание</h3>
+            <p class="about__card-text">Тренировки утром, днём и вечером 7 дней в неделю. Выберите удобное время для занятий.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== COACHES ====== -->
+    <section class="coaches" id="coaches">
+      <div class="coaches__container">
+        <div class="coaches__label">Команда</div>
+        <h2 class="coaches__title">Наши <span class="text-accent">тренеры</span></h2>
+        <div class="coaches__grid">
+
+          <!-- Тренер 1 — Темирбеков Билал -->
+          <div class="coaches__card">
+            <div class="coaches__avatar-wrap">
+              <div class="coaches__photo-placeholder">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="4" stroke="#666" stroke-width="1.5"/>
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="coaches__photo-hint">Фото</span>
+              </div>
+              <img src="/BILAL.jpg" alt="Темирбеков Билал" class="coaches__photo">
+            </div>
+            <h3 class="coaches__name">Темирбеков Билал</h3>
+            <p class="coaches__rank">Мастер спорта Кыргызстана</p>
+            <p class="coaches__exp">Опыт: 15 лет</p>
+            <div class="coaches__tag">Профессиональный бокс</div>
+            <div class="coaches__socials">
+             
+            </div>
+          </div>
+
+          <!-- Тренер 2 — Жуманалиев Даниель (главный) -->
+          <div class="coaches__card coaches__card--featured">
+            <div class="coaches__avatar-wrap">
+              <div class="coaches__photo-placeholder coaches__photo-placeholder--featured">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="4" stroke="rgba(230,57,70,0.6)" stroke-width="1.5"/>
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="rgba(230,57,70,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <img src="/DONI.png" alt="Жуманалиев Даниель" class="coaches__photo">
+            </div>
+            <h3 class="coaches__name">Жуманалиев Даниель</h3>
+            <p class="coaches__rank">Чемпион Кыргызстана 2024</p>
+            <p class="coaches__exp">Опыт: 20 лет</p>
+            <div class="coaches__tag">Главный тренер</div>
+            <div class="coaches__socials">
+              
+            </div>
+          </div>
+
+          <!-- Тренер 3 — Самудинов Арген -->
+          <div class="coaches__card">
+            <div class="coaches__avatar-wrap">
+              <div class="coaches__photo-placeholder">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="4" stroke="#666" stroke-width="1.5"/>
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="coaches__photo-hint">Фото</span>
+              </div>
+              <img src="/Doni2.jpg" alt="Самудинов Арген" class="coaches__photo">
+            </div>
+            <h3 class="coaches__name">Жетимишов Даниель</h3>
+            <p class="coaches__rank">КМС по боксу</p>
+            <p class="coaches__exp">Опыт: 10 лет</p>
+            <div class="coaches__tag">Детский бокс</div>
+            <div class="coaches__socials">
+             
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SCHEDULE ====== -->
+    <section class="schedule" id="schedule">
+      <div class="schedule__container">
+        <div class="schedule__label">Занятия</div>
+        <h2 class="schedule__title">Расписание <span class="text-accent">тренировок</span></h2>
+        <div class="schedule__table-wrap">
+          <table class="schedule__table">
+            <thead>
+              <tr class="schedule__head-row">
+                <th class="schedule__th">Время</th>
+                <th class="schedule__th">Понедельник</th>
+                <th class="schedule__th">Среда</th>
+                <th class="schedule__th">Пятница</th>
+                <th class="schedule__th">Суббота</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="schedule__row">
+                <td class="schedule__time">09:00 – 10:30</td>
+                <td class="schedule__cell schedule__cell--kids">Дети (6–10 лет)</td>
+                <td class="schedule__cell schedule__cell--kids">Дети (6–10 лет)</td>
+                <td class="schedule__cell schedule__cell--kids">Дети (6–10 лет)</td>
+                <td class="schedule__cell schedule__cell--teen">Подростки</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__time">11:00 – 12:30</td>
+                <td class="schedule__cell schedule__cell--teen">Подростки (11–17)</td>
+                <td class="schedule__cell schedule__cell--teen">Подростки (11–17)</td>
+                <td class="schedule__cell schedule__cell--teen">Подростки (11–17)</td>
+                <td class="schedule__cell schedule__cell--pro">Профи</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__time">18:00 – 19:30</td>
+                <td class="schedule__cell schedule__cell--begin">Взрослые новички</td>
+                <td class="schedule__cell schedule__cell--begin">Взрослые новички</td>
+                <td class="schedule__cell schedule__cell--begin">Взрослые новички</td>
+                <td class="schedule__cell">—</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__time">20:00 – 21:30</td>
+                <td class="schedule__cell schedule__cell--pro">Профессионалы</td>
+                <td class="schedule__cell schedule__cell--pro">Профессионалы</td>
+                <td class="schedule__cell schedule__cell--pro">Профессионалы</td>
+                <td class="schedule__cell">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="schedule__legend">
+          <span class="schedule__legend-item schedule__legend-item--kids">Дети</span>
+          <span class="schedule__legend-item schedule__legend-item--teen">Подростки</span>
+          <span class="schedule__legend-item schedule__legend-item--begin">Новички</span>
+          <span class="schedule__legend-item schedule__legend-item--pro">Профессионалы</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PRICES ====== -->
+    <section class="prices" id="prices">
+      <div class="prices__container">
+        <div class="prices__label">Стоимость</div>
+        <h2 class="prices__title">Выберите <span class="text-accent">абонемент</span></h2>
+        <div class="prices__grid">
+          <div class="prices__card">
+            <div class="prices__plan">Старт</div>
+            <div class="prices__amount">2 500 <span>KGS/мес</span></div>
+            <ul class="prices__list">
+              <li class="prices__item prices__item--ok">8 тренировок в месяц</li>
+              <li class="prices__item prices__item--ok">Доступ в зал</li>
+              <li class="prices__item prices__item--ok">Базовое снаряжение</li>
+              <li class="prices__item prices__item--no">Индивидуальные занятия</li>
+              <li class="prices__item prices__item--no">Видеоанализ боя</li>
+            </ul>
+            <a href="#contacts" class="btn btn--outline">Выбрать</a>
+          </div>
+          <div class="prices__card prices__card--popular">
+            <div class="prices__badge">Хит</div>
+            <div class="prices__plan">Боец</div>
+            <div class="prices__amount">4 500 <span>KGS/мес</span></div>
+            <ul class="prices__list">
+              <li class="prices__item prices__item--ok">Безлимитные тренировки</li>
+              <li class="prices__item prices__item--ok">Доступ в зал 24/7</li>
+              <li class="prices__item prices__item--ok">Профи снаряжение</li>
+              <li class="prices__item prices__item--ok">2 инд. занятия/мес</li>
+              <li class="prices__item prices__item--no">Видеоанализ боя</li>
+            </ul>
+            <a href="#contacts" class="btn btn--primary">Выбрать</a>
+          </div>
+          <div class="prices__card">
+            <div class="prices__plan">Чемпион</div>
+            <div class="prices__amount">7 000 <span>KGS/мес</span></div>
+            <ul class="prices__list">
+              <li class="prices__item prices__item--ok">Безлимитные тренировки</li>
+              <li class="prices__item prices__item--ok">Доступ в зал 24/7</li>
+              <li class="prices__item prices__item--ok">Профи снаряжение</li>
+              <li class="prices__item prices__item--ok">8 инд. занятий/мес</li>
+              <li class="prices__item prices__item--ok">Видеоанализ боя</li>
+            </ul>
+            <a href="#contacts" class="btn btn--outline">Выбрать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACTS ====== -->
+    <section class="contacts" id="contacts">
+      <div class="contacts__container">
+        <div class="contacts__label">Связь</div>
+        <h2 class="contacts__title">Запишись на <span class="text-accent">тренировку</span></h2>
+        <div class="contacts__wrap">
+          <div class="contacts__info">
+            <div class="contacts__info-item">
+              <span class="contacts__info-icon">📍</span>
+              <div>
+                <strong>Адрес</strong>
+                <p>ул. Спортивная, 12, корп. 3</p>
+              </div>
+            </div>
+            <div class="contacts__info-item">
+              <span class="contacts__info-icon">📞</span>
+              <div>
+                <strong>Телефон</strong>
+                <p>+996 778 52 72 99</p>
+              </div>
+            </div>
+            <div class="contacts__info-item">
+              <span class="contacts__info-icon">⏰</span>
+              <div>
+                <strong>Режим работы</strong>
+                <p>Пн–Пт: 08:00–22:00<br>Сб–Вс: 09:00–20:00</p>
+              </div>
+            </div>
+          </div>
+          <form class="contacts__form" id="contactForm">
+            <div class="form__group">
+              <input class="form__input" type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="form__group">
+              <input class="form__input" type="tel" placeholder="Номер телефона" required>
+            </div>
+            <div class="form__group">
+              <select class="form__input form__select">
+                <option value="" disabled selected>Выберите группу</option>
+                <option>Дети (6–10 лет)</option>
+                <option>Подростки (11–17 лет)</option>
+                <option>Взрослые новички</option>
+                <option>Профессионалы</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <textarea class="form__input form__textarea" placeholder="Ваш вопрос (необязательно)"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <span class="header__logo-knock">KNOCK</span><span class="header__logo-out">OUT</span>
+      </div>
+      <p class="footer__copy">© 2025 KnockOut Boxing Club. Все права защищены.</p>
+      <div class="footer__socials">
+        <a href="https://vk.ru/Danyelm4_chemp" class="footer__social footer__social--vk" target="_blank" aria-label="VK">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1.01-1.49-.9-1.74.16-.025.405 0 .81 0 1.567H12.23c-2.9 0-4.617-2.01-4.617-4.81 0-3.07 1.84-5.01 4.617-5.01h1.61v1.5c-.032 0-1.044-.22-1.044 1.04 0 .64.356 1.28 1.044 1.75v-1.75h1.61c.437 0 .87.17 1.217.47l.26.25c.73.73.79 1.73.16 2.49l-.26.26c.26.14.52.3.76.48.76.56 1.45 1.26 1.79 1.53z"/>
+          </svg>
+          VK
+        </a>
+        <a href="https://t.me/@danieljuman" class="footer__social footer__social--tg" target="_blank" aria-label="Telegram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+          TG
+        </a>
+        <a href="https://www.youtube.com/@Danyelm4_chemp" class="footer__social footer__social--yt" target="_blank" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          YT
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
